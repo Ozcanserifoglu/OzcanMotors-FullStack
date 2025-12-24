@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "ozcanMotorsBackEnd.Controllers.ArabalarController",
+    "Method": "GetArabalar",
+    "RelativePath": "api/Arabalar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ozcanMotorsBackEnd.Controllers.ArabalarController",
+    "Method": "ArabaEkle",
+    "RelativePath": "api/Arabalar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "yeniAraba",
+        "Type": "ozcanMotorsBackEnd.Models.Araba",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

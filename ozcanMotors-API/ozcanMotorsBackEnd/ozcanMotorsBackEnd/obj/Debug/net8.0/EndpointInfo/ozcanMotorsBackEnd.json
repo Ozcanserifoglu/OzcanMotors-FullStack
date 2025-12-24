@@ -1,0 +1,108 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "ozcanMotorsBackEnd",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Arabalar": {
+      "get": {
+        "tags": [
+          "Arabalar"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Arabalar"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Araba"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Araba"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Araba"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Araba": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "marka": {
+            "type": "string",
+            "nullable": true
+          },
+          "model": {
+            "type": "string",
+            "nullable": true
+          },
+          "yil": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fiyat": {
+            "type": "number",
+            "format": "double"
+          },
+          "vitesTipi": {
+            "type": "string",
+            "nullable": true
+          },
+          "yakitTipi": {
+            "type": "string",
+            "nullable": true
+          },
+          "kasaTipi": {
+            "type": "string",
+            "nullable": true
+          },
+          "renk": {
+            "type": "string",
+            "nullable": true
+          },
+          "kilometre": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "resimUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "aciklama": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

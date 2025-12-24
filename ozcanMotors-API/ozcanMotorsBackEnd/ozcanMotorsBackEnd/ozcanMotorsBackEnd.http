@@ -1,0 +1,6 @@
+@ozcanMotorsBackEnd_HostAddress = http://localhost:5196
+
+GET {{ozcanMotorsBackEnd_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

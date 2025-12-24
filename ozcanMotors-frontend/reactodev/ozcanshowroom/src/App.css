@@ -1,0 +1,230 @@
+
+:root {
+  width: 100%;
+  overflow-x: hidden; 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: 100% !important; 
+  text-align: left; 
+}
+
+/* NAVBAR DÜZENİ */
+.navbar {
+  width: 100%;
+  position: sticky; 
+  top: 0;
+  z-index: 1000;
+}
+
+/* ANA İÇERİK KUTUSU */
+/* Bu kutu slider ve arabaları ortada tutar */
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto; 
+  padding: 20px;
+  width: 100%;
+}
+
+/* SLIDER (CAROUSEL) AYARLARI */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1200px; 
+  height: 600px; 
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  margin: 0 auto 30px auto; 
+}
+
+.slide img {
+  width: 100%;
+  height: 600;
+  object-fit: cover;
+  display: block;
+}
+
+/* SLIDER YAZISI */
+.slide-yazi {
+  position: absolute;
+  bottom: 20px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7); 
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  text-align: center;
+  width: 80%; 
+  max-width: 600px;
+}
+
+.slide-yazi h2 {
+  margin: 0 0 10px 0;
+  font-size: 2rem;
+  color: #ffc107; 
+}
+
+.slider-detay {
+  margin: 0;
+  font-size: 1.1rem;
+}
+/* SLIDER OKLARI (SAĞ VE SOL UÇLARDA) */
+.slider-btn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px; 
+  background-color: rgba(0,0,0,0.2);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.slider-btn:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.sol { left: 0; }
+.sag { right: 0; }
+
+/* GALERİ VE KARTLAR */
+.sayfa-baslik {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.galeri {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.kart {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.kart:hover { transform: translateY(-5px); }
+
+.galeri .kart img {
+  width: 100%;           
+  height: 250px;        
+  object-fit: contain;     
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.bilgi { padding: 15px; }
+.etiket {
+  position: absolute;
+  top: 10px; right: 10px;
+  background: #ffc107; padding: 5px 10px;
+  border-radius: 15px; font-weight: bold; font-size: 0.8rem;
+}
+.fiyat { display: block; color: green; font-weight: bold; margin: 10px 0; }
+button { width: 100%; padding: 10px; background: #333; color: white; border: none; border-radius: 5px; cursor: pointer; }
+
+
+/* --- FOOTER TASARIMI --- */
+.footer-custom {
+  background-color: #1a1a1a; 
+  color: #b0b0b0; 
+  padding-top: 60px;
+  margin-top: 50px; 
+}
+
+.footer-logo {
+  color: #ffc107; 
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-baslik {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Linkler ve Liste Ayarları */
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #b0b0b0;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* Linkin üzerine gelince Sarı olsun ve hafif sağa kaysın */
+.footer-links a:hover {
+  color: #ffc107;
+  padding-left: 5px;
+}
+
+.footer-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Sosyal Medya Butonları */
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.social-btn {
+  background-color: #333;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: 0.3s;
+}
+
+.social-btn:hover {
+  background-color: #ffc107;
+  color: black;
+  transform: translateY(-3px); 
+}
+
+/* En alttaki telif hakkı şeridi */
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.85rem;
+}
